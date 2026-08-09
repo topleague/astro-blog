@@ -17,6 +17,38 @@
 		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
 		0 16px 32px rgba(var(--gray), 33%);
 }
+
+/* Responsive 3-Column Grid Utility Class */
+.responsive-three-columns {
+	display: grid;
+	grid-template-columns: 1fr; /* 1 column layout on mobile screens by default */
+	gap: 1.5rem;                /* Space/gutter distance between each image cell */
+	margin: 2rem 0;             /* Standard top and bottom spacing away from text content */
+	width: 100%;
+}
+
+/* Tablet Layout Media Query adjustment breakpoint */
+@media (min-width: 600px) {
+	.responsive-three-columns {
+		grid-template-columns: repeat(2, 1fr); /* Snaps into 2 columns on tablets */
+	}
+}
+
+/* Desktop Layout Media Query adjustment breakpoint */
+@media (min-width: 900px) {
+	.responsive-three-columns {
+		grid-template-columns: repeat(3, 1fr); /* Snaps into 3 equal columns on large monitors */
+	}
+}
+
+/* Ensure images inside our column grid scale down and behave fluidly */
+.responsive-three-columns img {
+	width: 100%;
+	height: 250px;       /* Forces a consistent image box block height */
+	object-fit: cover;   /* Crops beautifully without distortion/stretching */
+	border-radius: 6px;  /* Clean, slightly rounded edges */
+}
+
 body {
 	/*font-family: var(--font-playfair), serif;*/
 	font-family: var(--font-fraunces), var(--font-playfair), serif;
