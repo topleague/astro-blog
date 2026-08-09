@@ -22,5 +22,18 @@ export default defineConfig({
 			provider: fontProviders.google(),
 			fallbacks: ['serif'],
 		},
+		{
+			name: 'Monare Regular',
+			cssVariable: '--font-monare',
+			// Updated relative path pointing directly to your src folder setup
+			src: [
+				{
+					path: './src/assets/fonts/Monare-Regular.otf',
+					weight: '400',
+					style: 'normal',
+				}
+			],
+			fallbacks: ['sans-serif'],
+		},
 	],
 });

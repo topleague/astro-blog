@@ -46,7 +46,8 @@ h6 {
 	color: rgb(var(--black));
 	line-height: 1.2;
 	/*font-family: var(--font-playfair), serif;*/
-	font-family: var(--font-fraunces), var(--font-playfair), serif;
+	/*font-family: var(--font-fraunces), var(--font-playfair), serif;*/
+	font-family: var(--font-monare), sans-serif;
 }
 h1 {
 	font-size: 3.052em;
