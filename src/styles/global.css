@@ -8,6 +8,7 @@
 	--accent: #2337ff;
 	--accent-dark: #000d8a;
 	--black: 15, 18, 25;
+	--tranquil-black: 56, 66, 85; /* This represents #384255 */
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
 	--gray-dark: 34, 41, 57;
@@ -43,7 +44,7 @@ h4,
 h5,
 h6 {
 	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
+	color: rgb(var(--tranquil-black)); /* Updated to use your new variable professionally */
 	line-height: 1.2;
 	/*font-family: var(--font-playfair), serif;*/
 	/*font-family: var(--font-fraunces), var(--font-playfair), serif;*/
