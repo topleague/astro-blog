@@ -32,8 +32,8 @@ const { title, description, image = FallbackImage } = Astro.props;
 />
 <meta name="generator" content={Astro.generator} />
 
-<!-- The Native Astro Font API Call -->
-<Font name="Playfair Display" cssVariable="--font-playfair" preload />
+<!-- The Native Astro Font API Call (Aligned with astro.config.mjs) -->
+<Font cssVariable="--font-playfair" preload />
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
