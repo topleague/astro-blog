@@ -118,6 +118,25 @@ hr {
 	border: none;
 	border-top: 1px solid rgb(var(--gray-light));
 }
+
+/* Break out of the narrow container to fill the entire canvas layout */
+.full-width-image {
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+}
+
+.full-width-image img {
+	width: 100%;
+	height: auto;
+	max-height: 500px; /* Optional: caps the height so it doesn't take over the screen */
+	object-fit: cover; /* Keeps the photo aspect ratio looking crisp */
+	border-radius: 0;   /* Removes rounded edges for full canvas looks */
+}
+
 @media (max-width: 720px) {
 	body {
 		font-size: 18px;
