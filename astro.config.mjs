@@ -25,14 +25,12 @@ export default defineConfig({
 		{
 			name: 'Monare Regular',
 			cssVariable: '--font-monare',
-			// Updated relative path pointing directly to your src folder setup
-			src: [
-				{
-					path: './src/assets/fonts/Monare-Regular.otf',
-					weight: '400',
-					style: 'normal',
-				}
-			],
+			// Use the official local provider declaration mapping to your src file asset
+			provider: fontProviders.local({
+				src: ['./src/assets/fonts/Monare-Regular.otf'],
+				weight: '400',
+				style: 'normal',
+			}),
 			fallbacks: ['sans-serif'],
 		},
 	],
