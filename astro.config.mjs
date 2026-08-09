@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build
 export default defineConfig({
-	site: 'https://suskanchan.pages.dev',
+	site: 'https://pages.dev',
 	integrations: [
 		mdx(), 
 		sitemap()
@@ -13,6 +13,12 @@ export default defineConfig({
 		{
 			name: 'Playfair Display',
 			cssVariable: '--font-playfair',
+			provider: fontProviders.google(),
+			fallbacks: ['serif'],
+		},
+		{
+			name: 'Fraunces',
+			cssVariable: '--font-fraunces',
 			provider: fontProviders.google(),
 			fallbacks: ['serif'],
 		},

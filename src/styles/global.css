@@ -17,7 +17,8 @@
 		0 16px 32px rgba(var(--gray), 33%);
 }
 body {
-	font-family: var(--font-playfair), serif;
+	/*font-family: var(--font-playfair), serif;*/
+	font-family: var(--font-fraunces), var(--font-playfair), serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;
